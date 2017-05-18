@@ -1,0 +1,168 @@
+
+body {
+  width: 100%;
+}
+
+.wrap {
+  width: 60%;
+  margin: auto;
+}
+
+/*
+ヘッダー
+*/
+
+header {
+  border-bottom: 1px solid #000;
+}
+
+/*
+ナビゲーション
+*/
+
+.main-nav {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.main-nav li {
+  list-style: none;
+}
+
+.main-nav li:first-child {
+  margin-right: auto;
+}
+
+.main-nav a {
+  margin: 15px;
+  border-radius: 5px;
+  color: #000;
+  display: block;
+  text-decoration: none;
+  font-size: 28px;
+  text-shadow: 1px 1px 6px #A901DB;
+}
+
+.navi_right {
+  margin-top: 28px;
+}
+
+.main-nav a:hover {
+  text-shadow: 2px 2px 4px #A901DB;
+  color: #fff;
+}
+
+.main-nav .logo {
+  background: #4584b1;
+}
+
+
+
+/*
+メイン
+*/
+main {
+  border-bottom: 1px solid #000;
+}
+
+main section {
+  margin: 10px;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+main h1 {
+  color: #F486F8;
+  font-size: 1.5rem;
+}
+
+main p {
+  margin-top: 10px;
+}
+
+/*
+メールフォーム
+*/
+
+label {
+  display: inline: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px;
+  transition: border-color ease-in-out.15s, box-shadow ease-in-out .15s;
+}
+
+.text-danger {
+  display: inline-block;
+  font-family: 'Glyphicons Halfings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+
+
+
+.sbt_1{
+  margin-top: 20px;
+  width:100%;
+  height:40px;
+  background-color:#000;
+  border:none;
+  color:#fff;
+  font-size:13px;
+  font-weight:700;
+  text-align:center;
+  border-radius: 5px;
+  
+}
+.sbt_1:hover{
+  opacity: 0.8;
+  background-color:#000 !important;
+  color:#fff;
+}
+
+.sbt_2{
+  margin-top: 20px;
+  width:100%;
+  height:40px;
+  background-color:#000;
+  border:none;
+  color:#fff;
+  font-size:13px;
+  font-weight:700;
+  text-align:center;
+  border-radius: 5px;
+  
+}
+.sbt_2:hover{
+  opacity: 0.8;
+  background-color:#000 !important;
+  color:#fff;
+}
+
+/*
+フッター
+*/
+
+footer {
+  background-color: white;
+}
+
+footer .copy_light {
+  margin-top: 3px;
+  text-align: right;
+}
