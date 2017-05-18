@@ -23,12 +23,17 @@
     <main>
 
       <section class="top_page">
-        <div class="main_img"><img src="img/main/testmain.jpg" alt="メイン画像" width="100%" height="40%"></div>
+        <div class="main_img"><img src="img/top_img/topimg1.jpg" alt="メイン画像" width="100%" height="75%"></div>
         <h1>当サイトについて</h1>
         <p>
           このサイトは絵師、び～なすのＨＰです。テストテストテストテストテストテストテスト<br>
           テストテストテストテストテストテストテストテストテストテストテストテストテストテスト<br>
         </p>
+      </section>
+
+      <section class="topic">
+        <h1>TOPIC</h1>
+        <div>最新の情報</div>
       </section>
 
     </main>
