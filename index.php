@@ -1,8 +1,34 @@
+<?php
+require_once("function.php");
+
+// topic取得
+try {
+  $pdo = getDb();
+  $sql = "SELECT topic,  DATE_FORMAT(contribution, '%Y-%m-%d') as contribution FROM topic order by id desc limit 3";
+  $stmt = $pdo->prepare($sql);
+  $stmt->execute();
+  $topics = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+} catch (PDOException $e) {
+  echo $e->getMessage();
+}
+
+
+?>
+
 <html>
 <head>
     <meta charset="utf-8">
     <title>もぶおテストサーバー</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" /></script>
+    <script src="js/jquery.bxSlider.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.bxslider').bxSlider();
+      });
+    </script>
 </head>
 <body>
   <div class="wrap">
@@ -23,7 +49,12 @@
     <main>
 
       <section class="top_page">
-        <div class="main_img"><img src="img/top_img/topimg1.jpg" alt="メイン画像" width="100%" height="75%"></div>
+        <ul class="bxslider">
+          <li><img src="img/top_img/topimg1.jpg" alt="メイン画像" widtd="100%" height="88%"></li>
+          <li><img src="img/top_img/topimg2.jpg" alt="メイン画像" widtd="100%" height="88%"></li>
+          <li><img src="img/top_img/topimg3.jpg" alt="メイン画像" widtd="100%" height="88%"></li>
+          <li><img src="img/top_img/topimg4.jpg" alt="メイン画像" widtd="100%" height="88%"></li>
+        </ul>
         <h1>当サイトについて</h1>
         <p>
           このサイトは絵師、び～なすのＨＰです。テストテストテストテストテストテストテスト<br>
@@ -33,7 +64,22 @@
 
       <section class="topic">
         <h1>TOPIC</h1>
-        <div>最新の情報</div>
+        <div><strong>最新の情報</strong></div>
+
+        <table>
+        <?php foreach($topics as $topic):  ?>
+
+          <tr>
+            <td><?= pr($topics["2"]["contribution"]); ?></td>
+          </tr>
+          <tr>
+            <td><?= pr($topics["1"]["topic"]); ?></td>
+          </tr>
+
+        <?php endforeach; ?>
+        </table>
+       
+
       </section>
 
     </main>

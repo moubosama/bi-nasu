@@ -22,13 +22,8 @@
 
     <main>
 
-        <section class="top_page">
-          <div class="main_img"><img src="img/top_img/topimg2.jpg" alt="メイン画像" width="100%" height="75%"></div>
-          <h1>当サイトについて</h1>
-          <p>
-            このサイトは絵師、び～なすのＨＰです。テストテストテストテストテストテストテスト<br>
-            テストテストテストテストテストテストテストテストテストテストテストテストテストテスト<br>
-          </p>
+        <section class="Art">
+
         </section>
 
     </main>
